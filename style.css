@@ -1,0 +1,95 @@
+body {
+  margin: 0;
+  font-family: "Poppins", Arial, sans-serif;
+  background: #fff0f5;
+  color: #5a0033;
+  text-align: center;
+  font-size: 16px;
+}
+
+h1 { font-size: 2rem; color: #b03060; }
+h2 { font-size: 1.5rem; color: #b03060; }
+
+p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+button {
+  padding: 12px 18px;
+  font-size: 1rem;
+  border-radius: 12px;
+  border: none;
+  background: linear-gradient(145deg,#ff9ecf,#ff6fae);
+  color: white;
+  font-weight: 600;
+}
+
+.bestie-photo,
+.profile-photo {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  margin: 20px auto;
+}
+
+.buttons {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+}
+
+.cake-container {
+  width: 260px;
+  height: 240px;
+  position: relative;
+  margin: auto;
+}
+
+.layer {
+  width: 260px;
+  height: 60px;
+  position: absolute;
+  border-radius: 12px;
+  opacity: 0;
+}
+
+.layer1 { bottom: 0; background: #ffb6c1; }
+.layer2 { bottom: 60px; background: #8b4513; }
+.layer3 { bottom: 120px; background: #ffc0cb; }
+
+.candles {
+  position: absolute;
+  bottom: 180px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  opacity: 0;
+}
+
+.candle {
+  width: 8px;
+  height: 30px;
+  background: white;
+  border-radius: 4px;
+}
+
+.letter-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#letter {
+  font-size: 1.05rem;
+  max-width: 90%;
+  margin: auto;
+}
+
+@media (max-width: 480px) {
+  body { font-size: 17px; }
+  h1 { font-size: 1.8rem; }
+  h2 { font-size: 1.4rem; }
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Letter</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="letter-page">
+    <div id="letter"></div>
+    <button class="back-btn" onclick="window.location.href='index.html'">Back</button>
+  </div>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const text = `Hey Sehru,
+
+Happy Birthday to the most incredible person in my life!
+You're more than a friend — you're my family, my safe place,
+my laughter on bad days and my joy on good ones.
+
+I hope this year brings you the same happiness and love
+that you give to everyone around you.
+
+Always,
+Your Emmie ❤️`;
+
+      const box = document.getElementById("letter");
+      let i = 0;
+
+      function type() {
+        if (i < text.length) {
+          box.textContent += text.charAt(i++);
+          setTimeout(type, 30);
+        }
+      }
+      type();
+    });
+  </script>
+</body>
+</html>
